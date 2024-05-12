@@ -126,16 +126,19 @@ body a{
     padding-top: 150px;
 }
 
-.main_container h6{
+.main__ahref{
     margin-top: 20px;
     margin-bottom: 40px;
+}
+
+.main_container a{
     font-size: 16px;
     font-weight: 400;
     color: #141414;
 }
 
-h6 span{
-    color: rgba(20, 20, 20, 0.4);
+.main_container a:hover{
+    color: #454F5B;
 }
 
 .main_container div{
@@ -168,7 +171,7 @@ h6 span{
     align-items: center;
 }
 
-.desc_container button{
+.desc_container div button{
     background-color: transparent;
     padding: 7px 70px;
     border: 1px solid #ADD7FF;
@@ -193,6 +196,7 @@ h6 span{
     display: flex;
     align-items: center;
     gap: 16px;
+    background-color: transparent;
     border: 1px solid #ADD7FF;
     padding: 7px 16px;
 }
@@ -205,6 +209,11 @@ h6 span{
 
 
 
+
+.info{
+    margin-bottom: 100px;
+}
+
 .info_container{
     display: flex;
     gap: 30px;
@@ -213,7 +222,7 @@ h6 span{
 
 .filtr{
     width: 288px;
-    height: 415px;
+    height: 495px;
     padding: 24px;
     border: 1px solid #C4CDD5;
 }
@@ -239,17 +248,23 @@ label span{
     color: #161C24;
 }
 
-.filtr div{
+.filtr .filtr__input{
     display: flex;
     gap: 8px;
-    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #EAEAEA;
+    margin-bottom: 26px;
 }
 
 .filtr input {
     width: 116px;
     padding: 10px 35px 10px 25px;
-    border: 1px solid #4295E4;
+    border: 1px solid #EAEAEA;
     font-size: 14px;
+}
+
+.filtr input:hover{
+    border-color: #4295E4;
 }
 
 .filtr input:focus{
@@ -259,7 +274,12 @@ label span{
 .filtr .ahref{
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 32px;
+}
+
+.ahref div{
+    padding-bottom: 12px;
+    border-bottom: 1px solid #EDEDED;
 }
 
 .filtr a{
@@ -277,6 +297,12 @@ label span{
 }
 
 .gift{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift__block{
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
@@ -432,4 +458,33 @@ label span{
     font-size: 12px;
     font-weight: 400;
     color: #161C24;
+}
+
+.gift__page{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.gift__page a img{
+    width: 41px;
+}
+
+.page__betwen{
+    display: flex;
+    gap: 8px;
+}
+
+.page__betwen a{
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+    padding-top: 12px;
+    color: #181818;
+}
+
+.page__betwen a:hover{
+    background-color: #4295E4;
 }
